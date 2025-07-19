@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE | Premium E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body id="top">
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="toast">Item added to cart!</div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo animate__animated animate__fadeIn">LUXE</a>
+            <div class="nav-links">
+                <a href="#top" class="active">Home</a>
+                <a href="#products">Shop</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-icon">
+                    <a href="profile.html" title="User Profile">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1483982258113-b72862e6cff6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+                <div class="container">
+                    <div class="slide-content">
+                        <span class="subtitle">New Collection</span>
+                        <h1 class="title">Winter Vibes 2025</h1>
+                        <p class="description">Discover our premium selection of winter essentials</p>
+                        <a href="#products" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+                <div class="container">
+                    <div class="slide-content">
+                        <span class="subtitle">Limited Edition</span>
+                        <h1 class="title">Designer Accessories</h1>
+                        <p class="description">Exclusive pieces for the modern lifestyle</p>
+                        <a href="#products" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3>Free Shipping</h3>
+                <p>On all orders over $100</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-undo"></i>
+                </div>
+                <h3>Easy Returns</h3>
+                <p>30-day return policy</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Secure Payment</h3>
+                <p>100% secure checkout</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="collections" id="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Collections</h2>
+                <div class="view-all">
+                    <a href="#products">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="collection-grid">
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sneakers Collection">
+                    <div class="collection-info">
+                        <h3>Sneakers Collection</h3>
+                        <p>Explore our latest range of stylish and comfortable sneakers.</p>
+                        <a href="#products" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Accessories Collection">
+                    <div class="collection-info">
+                        <h3>Accessories Collection</h3>
+                        <p>Discover premium accessories to elevate your style.</p>
+                        <a href="#products" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Audio Collection">
+                    <div class="collection-info">
+                        <h3>Audio Collection</h3>
+                        <p>High-quality audio gear for an immersive experience.</p>
+                        <a href="#products" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="view-all">
+                    <a href="#">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="product-grid">
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <span class="subtitle">Limited Time Offer</span>
+                <h2 class="title">Winter Sale 30% Off</h2>
+                <p class="description">Use code: WINTER30 at checkout</p>
+                <a href="#products" class="btn btn-outline">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"The quality of products exceeded my expectations. Fast shipping and excellent customer service!"</p>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J.">
+                        <div class="author-info">
+                            <h4>Sarah J.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"I've shopped at many online stores, but LUXE stands out with their attention to detail and premium products."</p>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael T.">
+                        <div class="author-info">
+                            <h4>Michael T.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="quote">"Great customer support and top-notch products. My go-to store from now on!"</p>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Sophie M.">
+                        <div class="author-info">
+                            <h4>Sophie M.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots"></div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About LUXE</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Founded in 2025, LUXE is dedicated to bringing you the finest in premium lifestyle products. Our mission is to curate exceptional items that blend style, quality, and functionality for the modern consumer.</p>
+                    <p>Our team carefully selects each product to ensure it meets our high standards of craftsmanship and design. From fashion to technology, we strive to offer a shopping experience that is both luxurious and accessible.</p>
+                    <p>We believe in sustainability and ethical practices, partnering with brands that share our values to create a positive impact on the world.</p>
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="./Images/LUXE.jpeg" alt="About LUXE">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Khammam, Telangana, India, 507003</p>
+                    <p><i class="fas fa-phone"></i> +91 7702355938</p>
+                    <p><i class="fas fa-envelope"></i> bhukyarakesh094@gmail.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get 10% off your first order and stay updated with our latest collections</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Shopping Bag</h3>
+            <button class="close-cart">×</button>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-footer">
+            <div class="cart-summary">
+                <div class="cart-subtotal">
+                    <span>Subtotal</span>
+                    <span class="subtotal-price">$0.00</span>
+                </div>
+                <div class="cart-shipping">
+                    <span>Shipping</span>
+                    <span class="shipping-price">Calculated at checkout</span>
+                </div>
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span class="total-price">$0.00</span>
+                </div>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout <span>(Secure Payment)</span></button>
+            <div class="payment-methods">
+                <img src="./Images/Visa.png" alt="Visa">
+                <img src="./Images/Master Card.png" alt="Mastercard">
+                <img src="./Images/American Express.png" alt="American Express">
+                <img src="./Images/PayPal.png" alt="PayPal">
+            </div>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>LUXE</h4>
+                    <p>Premium e-commerce experience with carefully curated products for the modern lifestyle.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#products">All Products</a></li>
+                        <li><a href="#products">New Arrivals</a></li>
+                        <li><a href="#products">Best Sellers</a></li>
+                        <li><a href="#products">Special Offers</a></li>
+                        <li><a href="#products">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 LUXE. All rights reserved.</p>
+                <div class="footer-payments">
+                    <img src="./Images/Visa.png" alt="Visa">
+                    <img src="./Images/Master Card.png" alt="Mastercard">
+                    <img src="./Images/American Express.png" alt="American Express">
+                    <img src="./Images/PayPal.png" alt="PayPal">
+                    <img src="./Images/Apple Pay.png" alt="Apple Pay">
+                    <img src="./Images/G Pay.png" alt="Google Pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

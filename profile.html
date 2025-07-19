@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - LUXE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="toast"><i class="fas fa-check-circle"></i><span></span></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">LUXE</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-icon">
+                    <a href="profile.html"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="profile">
+        <div class="container">
+            <h2 class="section-title">Your Profile</h2>
+            <div class="profile-content">
+                <div class="profile-section">
+                    <h3>Personal Information</h3>
+                    <div class="profile-picture">
+                        <img id="profile-pic" src="./Images/rakesh.jpg" alt="Profile Picture">
+                        <div>
+                            <label for="profile-pic-upload" class="btn btn-outline">Change Picture</label>
+                            <input type="file" id="profile-pic-upload" accept="image/*" style="display: none;">
+                        </div>
+                    </div>
+                    <form id="personal-info-form">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+
+                <div class="profile-section">
+                    <h3>Address Details</h3>
+                    <form id="address-form">
+                        <div class="address-card">
+                            <h4>Primary Address</h4>
+                            <div class="form-group">
+                                <label for="address-line1">Address Line 1</label>
+                                <input type="text" id="address-line1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address-line2">Address Line 2 (Optional)</label>
+                                <input type="text" id="address-line2">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <input type="text" id="state" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <input type="text" id="country" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">ZIP/Postal Code</label>
+                                <input type="text" id="zip" required>
+                            </div>
+                        </div>
+                        <button type="button" id="add-address" class="btn btn-outline">Add New Address</button>
+                        <button type="submit" class="btn btn-primary">Save Addresses</button>
+                    </form>
+                </div>
+
+                <div class="profile-section">
+                    <h3>Order History</h3>
+                    <div class="order-list" id="order-list">
+                        <p>No orders placed yet.</p>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3>Saved Items</h3>
+                    <div class="wishlist" id="wishlist-items">
+                        <p>No items in your wishlist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-overlay"></div>
+    <aside class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-summary">
+                <div class="cart-subtotal">
+                    <span>Subtotal</span>
+                    <span class="subtotal-price">$0.00</span>
+                </div>
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span class="total-price">$0.00</span>
+                </div>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+            <div class="payment-methods">
+                <img src="./Images/Visa.png" alt="Visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+            </div>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About LUXE</h4>
+                    <p>LUXE offers premium quality products with a focus on elegance and style. Discover our curated collections today.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#products">Shop</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Khammam, Telangana, India</p>
+                    <p><i class="fas fa-phone"></i> +91 7702355938</p>
+                    <p><i class="fas fa-envelope"></i> brakesh094@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LUXE. All rights reserved.</p>
+                <div class="footer-payments">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Visa_2021.svg/512px-Visa_2021.svg.png?20240313022811" alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
